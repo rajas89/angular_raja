@@ -1,0 +1,29 @@
+
+<div id="sp-page">
+<div class="topcoat-navigation-bar">
+	
+	<div class="topcoat-navigation-bar__item left quarter" style="margin-top:10px">
+		<a class="topcoat-icon-button--quiet" href="" ng-click="$spMenu.toggle()">
+			<span class="topcoat-icon topcoat-icon--menu-stack"></span>
+		</a>
+	</div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Add Data</h1>
+    </div>
+</div>
+    
+<div ng-controller="AddCtrl" style="padding:10px">
+  <form>
+	<label>Nama : </label><br/>
+	<input type="text" ng-model="nama" ng-minlength="5" ng-maxlength="12" style="width:100%"><br/>
+	<label>Umur : </label><br/>
+	<input type="number" ng-model="umur"  style="width:100%"><br/>
+	<label>Alamat : </label><br/><br/>
+	<textarea style="width:100%" ng-model="alamat" class="topcoat-textarea" rows="6" cols="36" placeholder="Caption"></textarea><br/>
+
+    <button style="background-color:#f37728;color:white;border:none" class="topcoat-button" ng-click="submitTheForm();">Save</button>
+  </form>
+
+   
+</div>
+</div>
